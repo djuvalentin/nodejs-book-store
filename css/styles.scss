@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  /* background-color: blue; */
+}
+
+.books-container {
+  width: 50%;
+  border: black solid 1px;
+
+  background-color: antiquewhite;
+
+  .card {
+    position: relative;
+    margin: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+    padding: 5px;
+    border-radius: 5px;
+    border: black solid 2px;
+
+    background-color: rgb(192, 195, 199);
+
+    .cover {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        height: 150px;
+        aspect-ratio: 2/3;
+        display: block;
+
+        border: black double 5px;
+      }
+    }
+    .info {
+      * {
+        padding: 2px 0;
+      }
+      .price {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1%;
+      }
+    }
+    .actions {
+      .btn-details {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1%;
+      }
+    }
+    .best-seller {
+      position: absolute;
+      right: 20%;
+      top: 5px;
+      width: 90px;
+      height: 90px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+
+      border-radius: 50%;
+      border: double gold 10px;
+
+      color: gold;
+      text-shadow: 2px 2px 3px red;
+      font-weight: 800;
+
+      transform: rotate(45deg);
+
+      &.not-best-seller {
+        display: none;
+      }
+
+      .best {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

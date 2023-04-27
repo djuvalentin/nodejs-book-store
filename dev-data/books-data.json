@@ -1,0 +1,92 @@
+[
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": "Fiction",
+    "price": 12.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81fJ98a3I3L.jpg",
+    "summary": "To Kill a Mockingbird is a novel by Harper Lee published in 1960. Instantly successful, widely read in high schools and middle schools in the United States, it has become a classic of modern American literature, winning the Pulitzer Prize.",
+    "bestSeller": false
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "genre": "Fiction",
+    "price": 10.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91SZSW8qSsL.jpg",
+    "summary": "1984 is a dystopian novel by George Orwell published in 1949. The novel is set in a totalitarian society in the year 1984 and follows the life of Winston Smith, a low-ranking member of the ruling Party, as he begins to question the Party's authority and control.",
+    "bestSeller": true
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": "Fiction",
+    "price": 11.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81rZJSrKESL.jpg",
+    "summary": "The Great Gatsby is a novel by F. Scott Fitzgerald published in 1925. The story takes place in the summer of 1922, when a young man named Nick Carraway moves to Long Island and becomes fascinated by his wealthy neighbor Jay Gatsby and his lavish parties.",
+    "bestSeller": true
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "genre": "Fiction",
+    "price": 9.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91S2bzE6JmL.jpg",
+    "summary": "The Catcher in the Rye is a novel by J.D. Salinger published in 1951. The story is narrated by a teenager named Holden Caulfield, who is undergoing treatment in a mental institution after suffering a nervous breakdown.",
+    "bestSeller": false
+  },
+  {
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "genre": "Fiction",
+    "price": 8.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91MfRYrZeBL.jpg",
+    "summary": "Pride and Prejudice is a novel by Jane Austen published in 1813. The story follows the romantic lives of the Bennett sisters, particularly Elizabeth Bennett, as they navigate social class and expectations in early 19th-century England.",
+    "bestSeller": false
+  },
+  {
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "price": 14.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91Eo5zvBSkL.jpg",
+    "summary": "The Hobbit, or There and Back Again, is a children's fantasy novel by J.R.R. Tolkien published in 1937. The story follows hobbit Bilbo Baggins as he sets out on a journey with a group of dwarves and the wizard Gandalf to reclaim their stolen treasure from the dragon Smaug.",
+    "bestSeller": false
+  },
+  {
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "genre": "Thriller",
+    "price": 13.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/71I9X7Vkw5L.jpg",
+    "summary": "The Da Vinci Code is a thriller novel by Dan Brown published in 2003. The story follows symbologist Robert Langdon and cryptologist Sophie Neveu as they try to unravel a conspiracy involving the Priory of Sion and the Holy Grail.",
+    "bestSeller": true
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "genre": "Mystery",
+    "price": 12.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81TE9gFnz9L.jpg",
+    "summary": "The Girl with the Dragon Tattoo is a mystery novel by Stieg Larsson published in 2005. The story follows journalist Mikael Blomkvist and computer hacker Lisbeth Salander as they investigate the disappearance of a young woman from a wealthy family.",
+    "bestSeller": false
+  },
+  {
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "genre": "Fantasy",
+    "price": 22.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/81EaIKPaX9L.jpg",
+    "summary": "The Lord of the Rings is a trilogy of fantasy novels by J.R.R. Tolkien published between 1954 and 1955. The story follows hobbit Frodo Baggins as he embarks on a quest to destroy the One Ring and defeat the dark lord Sauron.",
+    "bestSeller": true
+  },
+  {
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "genre": "Science Fiction",
+    "price": 10.99,
+    "coverImage": "https://images-na.ssl-images-amazon.com/images/I/91yamzxSjLL.jpg",
+    "summary": "The Hitchhiker's Guide to the Galaxy is a science fiction novel by Douglas Adams published in 1979. The story follows the misadventures of hapless human Arthur Dent and his alien friend Ford Prefect as they travel through space after the destruction of Earth.",
+    "bestSeller": false
+  }
+]
