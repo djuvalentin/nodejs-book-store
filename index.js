@@ -1,5 +1,8 @@
 const http = require('http');
 const fs = require('fs');
+const url = require('url');
+
+const slugify = require('slugify');
 
 // const express = require('express');
 
@@ -29,6 +32,7 @@ const books = JSON.parse(dataBooks).map((book, i) => {
   return {
     ...book,
     id: i,
+    slug: slugify(book.title, { lower: true }),
   };
 });
 
@@ -39,6 +43,8 @@ const replacePlaceholders = function (template, book) {
   output = output.replaceAll(`{%PLACEHOLDER-GENRE%}`, book.genre);
   output = output.replaceAll(`{%PLACEHOLDER-PRICE%}`, book.price);
   output = output.replaceAll(`{%PLACEHOLDER-ID%}`, book.id);
+  output = output.replaceAll(`{%PLACEHOLDER-SLUG%}`, book.slug);
+  output = output.replaceAll(`{%PLACEHOLDER-SUMMARY%}`, book.summary);
 
   if (!book.bestSeller) {
     output = output.replaceAll(
@@ -51,11 +57,13 @@ const replacePlaceholders = function (template, book) {
 };
 
 const server = http.createServer((req, res) => {
-  if (req.url === '/api') {
+  const { pathname, query } = url.parse(req.url, true);
+
+  if (pathname === '/api') {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     res.end(dataBooks);
-  } else if (req.url === '/' || req.url === '/overview') {
+  } else if (pathname === '/' || pathname === '/overview') {
     const cardsMarkup = books
       .map(book => replacePlaceholders(templateCard, book))
       .join('');
@@ -63,9 +71,24 @@ const server = http.createServer((req, res) => {
       '{%PLACEHOLDER-CARDS%}',
       cardsMarkup
     );
+
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     res.end(output);
+  } else if (pathname === '/book') {
+    const book = books.find(book => book.slug === query.title);
+
+    if (!book) {
+      res.statusCode = 404;
+      res.setHeader('Content-Type', 'text/html');
+      res.end('<h1>404 page not found</h1>');
+    } else {
+      const bookMarkup = replacePlaceholders(templateBook, book);
+
+      res.statusCode = 200;
+      res.setHeader('Content-Type', 'text/html');
+      res.end(bookMarkup);
+    }
   } else {
     res.statusCode = 404;
     res.setHeader('Content-Type', 'text/html');

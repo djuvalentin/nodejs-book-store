@@ -6,13 +6,17 @@
     <div class="title"><b>Title</b>: {%PLACEHOLDER-TITLE%}</div>
     <div class="author"><b>Author</b>: {%PLACEHOLDER-AUTHOR%}</div>
     <div class="genre"><b>Genre</b>: {%PLACEHOLDER-GENRE%}</div>
-    <div class="price"><b>Price</b>: {%PLACEHOLDER-PRICE%}</div>
+    <div class="price">
+      <b>Price</b>: <span class="amount">{%PLACEHOLDER-PRICE%}</span>
+    </div>
   </div>
   <div class="actions">
-    <button class="btn-details">Details</button>
+    <button class="btn--details">
+      <a href="/book?title={%PLACEHOLDER-SLUG%}">Details</a>
+    </button>
   </div>
   <div class="best-seller {%PLACEHOLDER-NOT-BEST-SELLER%}">
-    <span class="best">BEST</span><br />
+    <span class="best">BEST</span>
     <span>SELLER!</span>
   </div>
 </figure>
